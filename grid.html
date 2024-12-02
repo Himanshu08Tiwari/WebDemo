@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            background-color: burlywood;
+            height: 100%;
+            width: 100%;
+            border: 2px solid red;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(auto, 1fr);
+            /*grid-template-rows: repeat(auto, 1fr);
+            grid-template-columns: repeat(3, 1fr);*/
+            gap: 10px;
+        }
+
+        .item {
+            background-color: rgb(72, 35, 84);
+            color: aliceblue;
+
+            border: 2px solid rgb(250, 247, 247);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+
+
+
+        @media (min-width: 700px) {
+            .container {
+                grid-template-rows: repeat(auto, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .header {
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+            .footer {
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+            .sidebar {
+                grid-row-start: 2;
+                grid-row-end: 4;
+            }
+
+            .content1 {
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item header">Header</div>
+        <div class="item sidebar">SideBar</div>
+        <div class="item content1">content1</div>
+        <div class="item">content2</div>
+        <div class="item">content3</div>
+        <div class="item footer">Footer</div>
+    </div>
+
+</body>
+
+</html>

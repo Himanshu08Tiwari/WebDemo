@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="intro" style="background-color: antiquewhite; height: 300px; width: 300px;">
+
+        <button id="btn">Click Here</button>
+
+
+    </div>
+    <div style="background-color: #3dba92; height: 300px; width: 300px;">
+
+        <form style="margin: 10px;">
+            <input type="text" id="frm">
+            <input type="submit">
+        </form>
+
+
+    </div>
+    <br>
+    <div id="menu">
+        <li>list a</li>
+        <li>list b</li>
+        <li>list c</li>
+        <li>list d</li>
+    </div>
+
+    <script>
+        /*
+        let x = document.getElementById("btn");
+        x.addEventListener('dblclick', btnClick);
+        x.addEventListener('mouseover', btnmouseOver);
+        x.addEventListener('mouseout', btnmouseOut);
+        function btnClick() {
+            x.style.cssText = "background-color: red";
+        }
+        function btnmouseOver() {
+            x.style.cssText = "background-color: green";
+        }
+        function btnmouseOut() {
+            x.style.cssText = "background-color: white";
+        }
+        // x.removeEventListener('click', btnClick);
+        
+                window.addEventListener('keydown', checkKey);
+                function checkKey(event) {
+                    console.log(event.key);
+                }
+        window.addEventListener('keyup', checKey);
+        function checKey(event) {
+            console.log(event.key);
+        }*/
+
+        /*
+        window.addEventListener('scroll', func);
+
+        function func() {
+            console.log("Scrolling....")
+        }*/
+
+
+        /*
+                window.addEventListener('wheel', function (event) {
+                    if (event.deltaY < 0) {
+                        console.log("Scrollong Up....");
+                    }
+                    else if (event.deltaY > 0) {
+                        console.log("Scrollong down....");
+                    }
+                })*/
+        /*
+window.addEventListener('scroll', function () {
+    if (pageYOffset > 150) {
+        document.body.style.cssText = "background-color: green";
+    }
+    else if (pageYOffset < 150) {
+        document.body.style.cssText = "background-color: white";
+    }
+})
+*/
+
+        let x = document.getElementById("frm");
+        x.addEventListener('focus', fun1);
+        x.addEventListener('blur', fun2);
+
+        function fun1() {
+            x.style.cssText = "background-color: #96e4e4";
+        }
+        function fun2() {
+            x.style.cssText = "background-color: white";
+        }
+        /*
+        x.addEventListener('input', function () {
+            console.log(this.value);
+        });*/
+        x.addEventListener('change', function () {
+            console.log(this.value);
+        });
+
+    </script>
+</body>
+
+</html>

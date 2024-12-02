@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background: #C33764;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #1D2671, #C33764);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            height: 60%;
+            width: 20%;
+            padding: 0;
+            background: linear-gradient(135deg, #184e68 0%, #57ca85 100%);
+            border: 2px solid rgb(32, 2, 2);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+
+        }
+
+        .card img {
+            height: 250px;
+            width: 82%;
+            /*border: 2px solid green;*/
+            border-radius: 10px;
+
+        }
+
+        .headingbox p {
+            padding-left: 25px;
+            padding-right: 20px;
+            font-size: 1rem;
+            font-weight: bolder;
+            font-family: 'Kanit', sans-serif;
+            text-align: start;
+            color: aliceblue;
+        }
+
+        .contentbox p {
+            padding-left: 25px;
+            padding-right: 20px;
+            font-weight: 400;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <img src="whatsapp-removebg-preview.png">
+
+            <div class="headingbox">
+                <p> Want To Get All The Latest Updates Of Technical Cell REC?</p>
+            </div>
+            <div class="contentbox">
+                <p>Scan this whatsapp QR Code to join our community, And never miss any updates.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

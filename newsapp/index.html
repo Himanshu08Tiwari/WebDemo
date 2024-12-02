@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="img-container">
+                <a href="#">
+                    <img src="news-logo.png" alt="logo" class="logo-img" onclick="reload()">
+                </a>
+            </div>
+            <div class="menu-container">
+                <a href="#ipl" id="ipl" onclick="onNavItemClick('ipl') ">ipl</a>
+                <a href="#politics" id="politics" onclick="onNavItemClick('politics') ">politics</a>
+                <a href="#technology" id="technology" onclick="onNavItemClick('technology') ">technology</a>
+
+            </div>
+
+            <div class="search-container">
+                <input type="text" class="text-area" placeholder="search here" id="search-text">
+                <button class="search-button" id="search-button">search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card-container" id="card-container">
+
+        </div>
+
+    </main>
+    <template id="card-template">
+        <div class="card">
+            <div class="card-img-container">
+                <img src="gulaab jamun.webp" alt="" class="news-card-img" id="news-img">
+
+            </div>
+            <div class="card-content-container">
+                <h2 class="news-header" id="news-head">news-title</h2>
+                <h3 class="news-source" id="news-src">news-source date</h3>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing eli
+                    Suscipit,placeat.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, non.</p>
+
+            </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>

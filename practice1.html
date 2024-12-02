@@ -1,0 +1,66 @@
+<!--<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>JS DOM paragraph style</title>
+</head>
+
+<body>
+    <form id="form1" onsubmit="getFormvalue()">
+        First name: <input type="text" name="fname" value="David"><br>
+        Last name: <input type="text" name="lname" value="Beckham"><br>
+        <input type="submit" value="Submit">
+        <script>
+            let x = document.getElementById("form1");
+            function getFormvalue() {
+                for (let i = 0; i < x.length; i++) {
+                    if (x[i].value != 'submit') {
+                        console.log(x[i].value);
+                    }
+
+                }
+            }
+
+        </script>
+
+
+</body>
+
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="sampleTable" border="1">
+        <tr>
+            <td>Row1 cell1</td>
+            <td>Row1 cell2</td>
+        </tr>
+        <tr>
+            <td>Row2 cell1</td>
+            <td>Row2 cell2</td>
+        </tr>
+    </table><br>
+    <input type="button" onclick="insert_Row()" value="Insert row">
+
+    <script>
+        function insert_Row() {
+            let newtble = document.getElementById("sampleTable");
+            let newRow = document.createElement("tr");
+            newRow.innerHTML = "<td>Row3 cell1</td><td>Row4 cell2</td>";
+
+            newtble.append(newRow);
+        }
+
+    </script>
+</body>
+
+</html>

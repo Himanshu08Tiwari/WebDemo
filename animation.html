@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: rgb(50, 241, 244);
+            height: 680px;
+            width: 1510px;
+            border: 3px solid black;
+            box-shadow: 10px 10px rgb(4, 89, 58);
+        }
+
+        #box {
+            background-color: brown;
+            height: 70px;
+            width: 210px;
+            margin: 5px;
+            position: relative;
+            border-radius: 5px;
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+
+        }
+
+        #circle {
+            background-color: brown;
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            position: relative;
+            border-radius: 50%;
+            animation: circle 3s linear 0s infinite alternate none;
+
+
+        }
+
+        #box2 {
+            background-color: brown;
+            height: 70px;
+            width: 210px;
+            margin: 5px;
+            position: relative;
+            border-radius: 5px;
+            animation: 5s linear 2s infinite alternate leftMovement;
+
+        }
+
+        @keyframes rightMovement {
+            from {
+                top: 0px;
+                left: 0px;
+            }
+
+            to {
+                top: 0px;
+                left: 1280px;
+            }
+        }
+
+        @keyframes leftMovement {
+            from {
+                top: 470px;
+                left: 1280px;
+            }
+
+            to {
+                top: 470px;
+                left: 0px;
+            }
+        }
+
+        @keyframes circle {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 400px;
+                left: 1200px;
+
+            }
+
+            50% {
+                top: 0px;
+                left: 1200px;
+
+            }
+
+            100% {
+                top: 400px;
+                left: 0;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box">
+
+        </div>
+        <div id="circle">
+
+        </div>
+        <div id="box2">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

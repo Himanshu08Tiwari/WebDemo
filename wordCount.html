@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <style>
+        body {
+            padding: 50px 100px;
+            background-color: bisque;
+
+        }
+
+        h1 {
+            text-align: center;
+            background-color: rgb(253, 140, 2);
+            color: aliceblue;
+            padding: 10px;
+            margin: 0px;
+            text-shadow: 0 0 5px black;
+        }
+
+        #txtarea {
+            width: 99.5%;
+            border-color: aqua;
+            font-size: 20px;
+        }
+
+        p {
+            text-align: center;
+            background-color: rgb(247, 197, 31);
+            font-size: 25px;
+            font-weight: bold;
+            color: aliceblue;
+            padding: 10px;
+            margin: 0px;
+            text-shadow: 0 0 3px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>WORD COUNTER</h1>
+    <textarea name="" id="txtarea" cols="30" rows="10"></textarea>
+    <p>
+        <span id="word">0</span> words
+        <span id="char">0</span> characters
+    </p>
+
+    <script>
+        let textarea = document.getElementById("txtarea");
+        textarea.addEventListener('input', function () {
+            var text = this.value;
+            let char = text.length;
+
+            document.getElementById("char").innerHTML = char;
+            text = text.trim();
+            let word = text.split(" ");
+            let cleanList = word.filter(function (elm) {
+                return elm != "";
+            })
+            document.getElementById("word").innerHTML = cleanList.length;
+        })
+    </script>
+
+
+
+</body>
+
+</html>
+
+<!--
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+</head>
+
+<body>
+    <p><a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self"
+            href="https://www.w3resource.com/">w3resource</a></p>
+    <button onclick="getAttributes()">Click here to get attributes value</button>
+
+    <script>
+        let atb = document.getElementById("w3r").getAttribute('href');
+        function getAttributes() {
+
+            console.log(atb);
+        }
+    </script>
+</body>
+
+
+
+</html>-->

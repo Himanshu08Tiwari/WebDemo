@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background: linear-gradient(135deg, #5b247a 0%, #43629f 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .card {
+            height: 62%;
+            width: 21%;
+            background: linear-gradient(135deg, #E3E3E3 0%, #e3e3e3 100%);
+            border: 1px solid #100616;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+
+        }
+
+        .card img {
+            width: 100%;
+            height: 117px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 20px 15px 20px 15px;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .paybox {
+            width: 92%;
+            height: 20%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 10px 5px 10px;
+            align-items: center;
+            border-radius: 5px;
+            background-color: #06225c74;
+        }
+
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .left img {
+            height: 32px;
+            width: 32px;
+        }
+
+        .detail p {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: aliceblue;
+        }
+
+        .payment {
+            width: 86%;
+            height: 35px;
+            border-radius: 5px;
+            background-color: #3c1453;
+            color: aliceblue;
+            box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+
+        }
+
+        #first {
+            font-size: 1.1rem;
+            font-weight: 550;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #second {
+            text-align: center;
+            font-weight: 200;
+            font-size: 0.9rem;
+            padding: 0px 10px 0px 10px;
+        }
+
+
+        #third {
+            font-size: 1rem;
+            font-weight: 600;
+            text-shadow: 2px 2px 2px rgb(170, 168, 168);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="drone_camera_technology_.jpg">
+            <div class="content">
+                <p id="first">Order Summary</p>
+                <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, reprehenderit dolor sit
+                    amet.</p>
+                <div class="paybox">
+                    <div class="left">
+                        <img src="music-fotor-20240103103526.png" alt="">
+                        <div class="detail">
+                            <p>Annual Subscription</p>
+                            <p>$99.99</p>
+                        </div>
+                    </div>
+                    <a href="#">Cancel</a>
+                </div>
+                <button class="payment">Proceed to Payment</button>
+                <p id="third">Cancel Order</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
